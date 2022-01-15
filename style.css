@@ -221,6 +221,34 @@ hr {
     font-weight: 300;
 }
 
+footer {
+    margin-top: 100px;
+    padding: 50px 0;
+    height: 100px;
+    background-color: #0A0826;
+    color: #ffffff;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info h2,
+p {
+    margin: 5px;
+    font-weight: 300;
+}
+
+.footer-info p {
+    font-size: .75em;
+    font-weight: 300;
+}
+
+.social-icon i {
+    font-size: 1.75em;
+    margin: 15px 15px;
+}
+
 
 /* --------media query design--------  */
 
