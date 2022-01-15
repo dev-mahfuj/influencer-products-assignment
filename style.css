@@ -70,7 +70,7 @@ body {
 
 .container,
 .header-section {
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
@@ -156,7 +156,7 @@ body {
 
 .sliding-section:hover .slide-detail {
     position: relative;
-    transform: translate(100%);
+    transform: translate(125%);
 }
 
 .sliding-section:hover .slide-img {
