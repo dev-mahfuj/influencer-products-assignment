@@ -8,9 +8,66 @@ body {
 }
 
 
+/* =================header section start===================  */
+
+.header-area {
+    background-color: #dddada3f;
+    margin-bottom: 50px;
+}
+
+.header-area .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-area .header-section nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #000000;
+    margin-left: 34px;
+}
+
+
+/* =================toggle menu===========  */
+
+.header-section-toggle {
+    display: none;
+    text-align: center;
+    background-color: #dddada3f;
+    padding: 25px 10px;
+}
+
+.site-logo-title-toggle h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #504e4ee8;
+}
+
+.toggle-menu-item a {
+    display: block;
+    text-decoration: none;
+    color: #504e4ee8;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(175, 173, 173, 0.411)
+}
+
+.toggle-menu-items .search-icon a {
+    display: inline-block;
+    margin: 10px;
+    color: #504e4ee8;
+    padding-bottom: 0px;
+}
+
+
 /* ----------sliding section--------  */
 
-.container {
+.container,
+.header-section {
     width: 90%;
     margin: auto;
 }
@@ -163,6 +220,22 @@ hr {
     margin: 0;
 }
 
+.explore-collection {
+    text-align: right;
+    padding: 10px 10px;
+    margin: 50px 0 0 0;
+}
+
+.explore-collection a {
+    text-decoration: none;
+    color: #E02C6D;
+}
+
+.explore-collection i {
+    color: #E02C6D;
+    margin-left: 10px;
+}
+
 
 /* Our happy clients section start */
 
@@ -221,6 +294,27 @@ hr {
     font-weight: 300;
 }
 
+.more-reviews {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.more-reviews button {
+    border: none;
+    padding: 8px 10px;
+    background-color: #E02C6D;
+}
+
+.more-reviews a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* ======================footer area start====================  */
+
 footer {
     margin-top: 100px;
     padding: 50px 0;
@@ -250,9 +344,18 @@ p {
 }
 
 
-/* --------media query design--------  */
+/* --------media query design start--------  */
 
 @media only screen and (max-width:680px) {
+    /* ======================header section start==========  */
+    .header-area {
+        display: none;
+    }
+    /* ========================toggle menu==============  */
+    .header-section-toggle {
+        display: block;
+    }
+    /* =======================main area start====================  */
     .container {
         width: 100%;
         margin: auto;
@@ -304,6 +407,11 @@ p {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px 0px;
     }
+    .explore-collection {
+        text-align: right;
+        padding: 10px 10px;
+        margin: 30px 0 0 0;
+    }
     /* ----------clients section start------  */
     .client-details {
         width: 98%;
@@ -313,12 +421,27 @@ p {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px 20px;
     }
+    .clients h2 {
+        margin: 50px 0 30px 0;
+    }
+    footer {
+        margin-top: 50px;
+    }
 }
 
 
-/* media query for Tab device */
+/* -----------------media query for Tab device----------- */
 
 @media only screen and (min-width:681px) and (max-width:991px) {
+    .header-area {
+        display: none;
+    }
+    /*
+    /* ========================toggle menu==============  */
+    .header-section-toggle {
+        display: block;
+    }
+    /* =========================main area start======================  */
     .container {
         width: 99%;
         margin: auto;
@@ -373,5 +496,11 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 20px;
+    }
+    .clients h2 {
+        margin: 50px 0 30px 0;
+    }
+    footer {
+        margin-top: 50px;
     }
 }
