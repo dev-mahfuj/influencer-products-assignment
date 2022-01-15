@@ -88,7 +88,7 @@ body {
     width: 50%;
 }
 
-..slide-detail {
+.slide-detail {
     padding-right: 120px;
 }
 
@@ -101,7 +101,7 @@ body {
 .sliding-section .slide-detail .slide-img-info p {
     font-size: 1em;
     font-weight: 600;
-    margin-right: 45%;
+    margin-right: 42%;
     margin-bottom: 25px;
 }
 
@@ -156,7 +156,7 @@ body {
 
 .sliding-section:hover .slide-detail {
     position: relative;
-    transform: translate(125%);
+    transform: translate(120%);
 }
 
 .sliding-section:hover .slide-img {
